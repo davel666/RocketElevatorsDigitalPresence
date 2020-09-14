@@ -1,0 +1,1482 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>Rocket Elevators + Admin</title>
+		<meta name="description" content="" />
+		<meta name="Author" content="Dorin Grigoras [www.stepofweb.com]" />
+
+		<!-- mobile settings -->
+		<meta name="viewport" content="width=device-width, maximum-scale=1, initial-scale=1, user-scalable=0" />
+		<!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
+
+		<!-- WEB FONTS : use %7C instead of | (pipe) -->
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600%7CRaleway:300,400,500,600,700%7CLato:300,400,400italic,600,700" rel="stylesheet" type="text/css" />
+
+		<!-- CORE CSS -->
+		<link href="assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+
+		<!-- REVOLUTION SLIDER -->
+		<link href="assets/plugins/slider.revolution/css/extralayers.css" rel="stylesheet" type="text/css" />
+		<link href="assets/plugins/slider.revolution/css/settings.css" rel="stylesheet" type="text/css" />
+
+		<!-- THEME CSS -->
+		<link href="assets/css/essentials.css" rel="stylesheet" type="text/css" />
+		<link href="assets/css/layout.css" rel="stylesheet" type="text/css" />
+
+		<!-- PAGE LEVEL SCRIPTS -->
+		<link href="assets/css/header-1.css" rel="stylesheet" type="text/css" />
+		<link href="assets/css/color_scheme/yellow.css" rel="stylesheet" type="text/css" id="color_scheme" />
+
+		
+	</head>
+
+	<!-- 
+		AVAILABLE BODY CLASSES:
+		
+		smoothscroll 			= create a browser smooth scroll
+		enable-animation		= enable WOW animations
+
+		bg-grey					= grey background
+		grain-grey				= grey grain background
+		grain-blue				= blue grain background
+		grain-green				= green grain background
+		grain-blue				= blue grain background
+		grain-orange			= orange grain background
+		grain-yellow			= yellow grain background
+		
+		boxed 					= boxed layout
+		pattern1 ... patern11	= pattern background
+		menu-vertical-hide		= hidden, open on click
+		
+		BACKGROUND IMAGE [together with .boxed class]
+		data-background="assets/images/_smarty/boxed_background/1.jpg"
+	-->
+	<body class="smoothscroll enable-animation">
+
+		<!-- SLIDE TOP -->
+		<div id="slidetop">
+
+			<div class="container">
+				
+				<div class="row">
+
+					<div class="col-md-4">
+						<h6><i class="icon-heart"></i> WHY rocket elevator?</h6>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas metus nulla, commodo a sodales sed, dignissim pretium nunc. Nam et lacus neque. Ut enim massa, sodales tempor convallis et, iaculis ac massa. </p>
+					</div>
+
+					<div class="col-md-4">
+						<h6><i class="fa-facheck"></i> RECENTLY VISITED</h6>
+						<ul class="list-unstyled">
+							<li><a href="#"><i class="fa fa-angle-right"></i> Consectetur adipiscing elit amet</a></li>
+							<li><a href="#"><i class="fa fa-angle-right"></i> This is a very long text, very very very very very very very very very very very very </a></li>
+							<li><a href="#"><i class="fa fa-angle-right"></i> Lorem ipsum dolor sit amet</a></li>
+							<li><a href="#"><i class="fa fa-angle-right"></i> Dolor sit amet,consectetur adipiscing elit amet</a></li>
+							<li><a href="#"><i class="fa fa-angle-right"></i> Consectetur adipiscing elit amet,consectetur adipiscing elit</a></li>
+						</ul>
+					</div>
+
+					<div class="col-md-4">
+						<h6><i class="icon-envelope"></i> CONTACT INFO</h6>
+						<ul class="list-unstyled">
+							<li><b>Address:</b> PO Box 21132, Here Weare St, <br /> Melbourne, Vivas 2355 Australia</li>
+							<li><b>Phone:</b> 1-800-565-2390</li>
+							<li><b>Email:</b> <a href="mailto:support@yourname.com">support@yourname.com</a></li>
+						</ul>
+					</div>
+
+				</div>
+
+			</div>
+
+			<a class="slidetop-toggle" href="#"><!-- toggle button --></a>
+
+		</div>
+		<!-- /SLIDE TOP -->
+
+
+		<!-- wrapper -->
+		<div id="wrapper">
+
+			<!-- 
+				AVAILABLE HEADER CLASSES
+
+				Default nav height: 96px
+				.header-md 		= 70px nav height
+				.header-sm 		= 60px nav height
+
+				.b-0 		= remove bottom border (only with transparent use)
+				.transparent	= transparent header
+				.translucent	= translucent header
+				.sticky			= sticky header
+				.static			= static header
+				.dark			= dark header
+				.bottom			= header on bottom
+				
+				shadow-before-1 = shadow 1 header top
+				shadow-after-1 	= shadow 1 header bottom
+				shadow-before-2 = shadow 2 header top
+				shadow-after-2 	= shadow 2 header bottom
+				shadow-before-3 = shadow 3 header top
+				shadow-after-3 	= shadow 3 header bottom
+
+				.clearfix		= required for mobile menu, do not remove!
+
+				Example Usage:  class="clearfix sticky header-sm transparent b-0"
+			-->
+			<div id="header" class="navbar-toggleable-md sticky header-md clearfix"; style= background:rgb(251,253,253)>
+
+				<!-- TOP NAV -->
+				<header id="topNav">
+					<div class="container">
+
+						<!-- Mobile Menu Button -->
+						<button class="btn btn-mobile" data-toggle="collapse" data-target=".nav-main-collapse">
+							<i class="fa fa-bars"></i>
+						</button>
+
+						<!-- Logo -->
+						<a class="logo float-left scrollTo"  href="#top">
+							<img src="https://rocketelevatorslp.com/assets/images/R2.png" alt="logo rocket elevators"/>
+						</a>
+
+						<!-- 
+							Top Nav 
+							
+							AVAILABLE CLASSES:
+							submenu-dark = dark sub menu
+						-->
+						<div class="navbar-collapse collapse float-right nav-main-collapse submenu-dark"
+						style= background:rgb(251,253,253);>
+							<nav class="nav-main">
+
+								<!-- 
+									.nav-onepage
+									Required for onepage navigation links
+									
+									Add .external for an external link!
+								-->
+								<ul id="topMain" class="nav nav-pills nav-main nav-onepage">
+									
+									<li class="active"><!-- HOME -->
+										<a href="#home">
+											HOME
+										</a>
+									</li>
+									<li class="dropdown"><!-- Services -->
+										<a class="dropdown-toggle" href="#">
+											SERVICES
+										</a>
+										<ul class="dropdown-menu">
+											<li><a href="http://127.0.0.1:5500/Smarty/HTML_BS4/index-fullscreen-image-residentiel.html">RESIDENTIAL</a></li>
+											<li><a href="http://127.0.0.1:5500/Smarty/HTML_BS4/index-fullscreen-image.corporatif.html">CORPORATE</a></li>
+										</ul>
+									</li>
+									
+									
+									
+									<li><!-- WORK -->
+										<a href="#work">
+											WORK
+										</a>
+									</li>
+									<li><!-- NEWS -->
+										<a href="#news">
+											NEWS
+										</a>
+									</li>
+									<li><!-- OVERVIEW -->
+										<a href="#overview">
+											OVERVIEW
+										</a>
+									</li>
+									<li><!-- CLIENTS -->
+										<a href="#clients">
+											CLIENTS
+										</a>
+									</li>
+									<li><!-- BLOG -->
+										
+											BLOG
+										
+									</li>
+									<li><!-- CONTACT -->
+										<a href="#contact">
+											CONTACT
+										</a>
+									</li>
+								</ul>
+
+							</nav>
+						</div>
+
+					</div>
+				</header>
+				<!-- /Top Nav -->
+
+			</div>
+
+<!--SlideShow container-->
+
+
+		
+		
+		
+		
+	</div>
+</div>
+
+		
+		
+			
+			
+			<!-- /REVOLUTION SLIDER -->
+
+			<!-- REVOLUTION SLIDER -->
+			<div class="slider fullwidthbanner-container roundedcorners">
+				<!--
+					Navigation Styles:
+					
+						data-navigationStyle="" theme default navigation
+						
+						data-navigationStyle="preview1"
+						data-navigationStyle="preview2"
+						data-navigationStyle="preview3"
+						data-navigationStyle="preview4"
+						
+					Bottom Shadows
+						data-shadow="1"
+						data-shadow="2"
+						data-shadow="3"
+						
+					Slider Height (do not use on fullscreen mode)
+						data-height="300"
+						data-height="350"
+						data-height="400"
+						data-height="450"
+						data-height="500"
+						data-height="550"
+						data-height="600"
+						data-height="650"
+						data-height="700"
+						data-height="750"
+						data-height="800"
+				-->
+				<div class="fullwidthbanner" data-height="600" data-shadow="0" data-navigationStyle="preview2">
+					<ul class="hide">
+
+						<!-- SLIDE 1 -->  
+						<li data-transition="parallaxtotop"  data-slotamount="7" data-masterspeed="600"  data-saveperformance="off"  data-title="bright the futur">
+							<!-- MAIN IMAGE -->
+							
+
+							<div class="tp-caption white_big skewfromleft tp-resizeme"
+								data-x="471"
+								data-y="100" 
+								data-speed="400"
+								data-start="1500"
+								data-easing="Power3.easeInOut"
+								data-splitin="words"
+								data-splitout="none"
+								data-elementdelay="0.1"
+								data-endelementdelay="0.1"
+								data-endspeed="600"
+								style="z-index: 2; font-size:65px; line-height:85px; font-weight:bold; letter-spacing:0; text-shadow:none;">
+									
+							</div>
+
+							<div class="tp-caption tp-fade"
+								data-x="left"
+								data-y="25" 
+								data-speed="300"
+								data-start="800"
+								data-easing="Power3.easeInOut"
+								data-elementdelay="0.1"
+								data-endelementdelay="0.1"
+								data-endspeed="300"
+								style="z-index: 3">
+									<img src="https://rocketelevatorsdazg.com/assets/images/Rocket%20Elevator%20Assets/AdobeStock_162479912.jpeg" alt="ascenseur qui va au ciel"width="1000">
+							</div>
+							
+							
+							
+							<div class="tp-caption content_text_center skewfromleft tp-resizeme"
+								data-x="530"
+								data-y="195" 
+								data-speed="500"
+								data-start="2000"
+								data-easing="Power3.easeInOut"
+								data-splitin="none"
+								data-splitout="none"
+								data-elementdelay="0.1"
+								data-endelementdelay="0.1"
+								data-endspeed="600"
+
+								style="z-index: 4; font-size:30px; color:rgb(10, 10, 10); font-weight:300; text-shadow:none; ">
+									
+								Elevate Safety, Speed And Style
+							</div>
+							
+							
+							
+							
+							
+							
+				
+							
+							
+							
+
+							<div class="tp-caption sfb tp-resizeme"
+								data-x="665"
+								data-y="300" 
+								data-speed="500"
+								data-start="1500"
+								data-easing="Power3.easeInOut"
+								data-splitin="none"
+								data-splitout="none"
+								data-elementdelay="0.1"
+								data-endelementdelay="0.1"
+								data-endspeed="500"
+								style="z-index: 5; max-width: auto; max-height: auto; white-space: nowrap;">
+									<a class="btn btn-blue btn-lg" href="#">OUR SERVICES &nbsp; <i class="fa fa-angle-right"></i></a>
+							</div>
+							
+							
+							
+							<div class="tp-caption sfb tp-resizeme"
+								data-x="665"
+								data-y="410" 
+								data-speed="500"
+								data-start="1500"
+								data-easing="Power3.easeInOut"
+								data-splitin="none"
+								data-splitout="none"
+								data-elementdelay="0.1"
+								data-endelementdelay="0.1"
+								data-endspeed="500"
+								style="z-index: 6; max-width: auto; max-height: auto; white-space: nowrap;">
+									<a class="btn btn-blue btn-lg" href="#">GET A QUOTE &nbsp; <i class="fa fa-angle-right"></i></a>
+							</div>
+						</li>
+
+						<!-- SLIDE 2 -->
+						<li data-transition="parallaxtotop" data-slotamount="7" data-masterspeed="300"  data-saveperformance="off" data-title="Bright Future">
+							<!-- MAIN IMAGE -->
+							<img src="https://4.imimg.com/data4/CO/TA/MY-4909498/home-elevator-500x500.jpg" alt="elevator residential" width="40" >
+
+							<div class="overlay dark-4"><!-- dark overlay [0 to 9 opacity] --></div>
+
+							<div class="tp-caption font-roboto skewfromleft tp-resizeme"
+								data-x="50"
+								data-y="100" 
+								data-speed="500"
+								data-start="1500"
+								data-easing="Cubic.easeOut"
+								data-splitin="none"
+								data-splitout="none"
+								data-elementdelay="0.1"
+								data-endelementdelay="0.1"
+								data-endspeed="500"
+								style="z-index: 2; color:#fff; font-size:40px; line-height:85px; font-weight:bold; letter-spacing:0; text-shadow:none;">
+									 <br />
+									Elevetors for Residential Buildings
+							</div>
+
+							<div class="tp-caption skewfromrightshort tp-resizeme"
+								data-x="50"
+								data-y="300" 
+								data-speed="500"
+								data-start="1000"
+								data-easing="easeInCirc"
+								data-splitin="none"
+								data-splitout="none"
+								data-elementdelay="0.1"
+								data-endelementdelay="0.1"
+								data-endspeed="500"
+								style="z-index: 3; font-size:20px; color:#fff; font-weight:300; text-shadow:none;">
+								The Quietest Elevetors For Residential : A Real Velvet For The Ears
+							</div>
+				
+						<div class="tp-caption sfb tp-resizeme"
+							data-x="50"
+							data-y="410" 
+							data-speed="500"
+							data-start="1500"
+							data-easing="Power3.easeInOut"
+							data-splitin="none"
+							data-splitout="none"
+							data-elementdelay="0.1"
+							data-endelementdelay="0.1"
+							data-endspeed="500"
+							style="z-index: 6; max-width: auto; max-height: auto; white-space: nowrap;">
+								<a class="btn btn-blue btn-lg" href="#">MORE INFORMATIONS FOR RESIDENTIAL &nbsp; <i class="fa fa-angle-right"></i></a>
+						</div>
+				
+				
+				
+				
+				
+
+							
+						</li>
+
+						<!-- SLIDE 3 -->
+
+						<li data-transition="parallaxtotop" data-slotamount="7" data-masterspeed="300"  data-saveperformance="off" data-title="Bright Future">
+							<!-- MAIN IMAGE -->
+							<img src="https://i.pinimg.com/originals/28/0a/0e/280a0e539cf40d35e5f56b174e1af36e.jpg" alt="cover image" width="50" >
+
+							<div class="overlay dark-4"><!-- dark overlay [0 to 9 opacity] --></div>
+
+							<div class="tp-caption font-roboto skewfromleft tp-resizeme"
+								data-x="50"
+								data-y="100" 
+								data-speed="500"
+								data-start="1500"
+								data-easing="Cubic.easeOut"
+								data-splitin="none"
+								data-splitout="none"
+								data-elementdelay="0.1"
+								data-endelementdelay="0.1"
+								data-endspeed="500"
+								style="z-index: 2; color:#fff; font-size:40px; line-height:85px; font-weight:bold; letter-spacing:0; text-shadow:none;">
+									 <br />
+									Elevetors for commercial Buildings
+							</div>
+
+							<div class="tp-caption skewfromrightshort tp-resizeme"
+								data-x="50"
+								data-y="300" 
+								data-speed="500"
+								data-start="1000"
+								data-easing="easeInCirc"
+								data-splitin="none"
+								data-splitout="none"
+								data-elementdelay="0.1"
+								data-endelementdelay="0.1"
+								data-endspeed="500"
+								style="z-index: 3; font-size:20px; color:rgb(241, 232, 232); font-weight:300; text-shadow:none;">
+								The Elevetors For Corporative Building: Dare With Our Futurist Collection Inspired By Total Recall And Robocop Movies 
+							</div>
+
+							<div class="tp-caption sfb tp-resizeme"
+							data-x="50"
+							data-y="410" 
+							data-speed="500"
+							data-start="1500"
+							data-easing="Power3.easeInOut"
+							data-splitin="none"
+							data-splitout="none"
+							data-elementdelay="0.1"
+							data-endelementdelay="0.1"
+							data-endspeed="500"
+							style="z-index: 6; max-width: auto; max-height: auto; white-space: nowrap;">
+								<a class="btn btn-blue btn-lg" href="#">MORE INFORMATIONS FOR CORPORATE &nbsp; <i class="fa fa-angle-right"></i></a>
+						</div>
+
+							
+---
+							
+						</li>
+
+					</ul>
+
+				</div>
+			</div>
+			<!-- /REVOLUTION SLIDER -->
+
+
+			<hr class="m-0"/><!-- 1px line separator -->
+
+
+			<!-- BUTTON CALLOUT -->
+			
+			<!--<a href="#" class="btn btn-xlg btn-primary fs-20 fullwidth m-0 rad-0 p-40">-->
+				<span class="font-lato fs-30; ">
+					
+					Are you convinced by Rocket Elevator? 
+					<strong>Contact us &raquo;</strong>
+				</span>
+			</a>
+			<!-- /BUTTON CALLOUT -->
+
+
+			
+			
+			
+			
+			
+			
+			
+			<!-- Services -->
+			<section id="services">
+				<div class="container">
+
+					<div class="row">
+						<div class="col-sm-4">
+							<a class="image-hover lightbox" href="https://vimeo.com/ondemand/buildingwithawareness/108669033" data-plugin-options='{"type":"iframe"}'>
+								<span class="image-hover-icon image-hover-dark"><!-- image-hover-light | image-hover-dark -->
+									<i class="fa fa-vimeo-square"><!-- video icon --></i>
+								</span>
+								<img class="img-fluid" src="https://www.murgitroyd.com/wp-content/uploads/2019/03/Elevator-Awards-2019.jpg" alt="img" />
+							</a>
+
+							<h3 class="mt-10">Winner of several prizes and participation in several large-scale projects around the world </h3>
+							<p>Our main pride: winner of 7 consecutive Awards and winners of the most daring project in 2020.</p>
+							<a href="#" class="btn btn-default">READ MORE ABOUT PRIZES AND PROJECTS</a>
+						</div>
+
+						<div class="col-sm-4">
+							<a class="image-hover lightbox" href="https://www.youtube.com/watch?v=ZhCyoDlltbo" data-plugin-options='{"type":"iframe"}'>
+								<span class="image-hover-icon image-hover-dark"><!-- image-hover-light | image-hover-dark -->
+									<i class="fa fa-youtube-square"><!-- video icon --></i>
+								</span>
+								<img class="img-fluid" src="https://333ezo211ycq4e8a84e2lc52-wpengine.netdna-ssl.com/wp-content/uploads/2017/09/services-commercial-886x360.jpg" alt="gars seul dans ascenseur" width=  />
+							</a>
+							<h3 class="mt-10">Customer service and maintenance for residential buildings </h3>
+							<p>The customer service department also includes a maintenance team. We are proud to have created our own maintenance team available 24 hours a day, 7 days a week.</p>
+							<a href="#" class="btn btn-default">RESIDENTIAL SERVICES AND CONTACT </a>
+						</div>
+
+						<div class="col-sm-4">
+							<img class="img-fluid" src="https://miro.medium.com/max/400/1*KU8QL7idtZ9DQwRtjXNSmg.jpeg" alt="img" />
+							<h3 class="mt-10">Customer Service and maintenance for corporate buildings</h3>
+							<p>We have developed a commercial maintenance team all around the world. Available 24 hours a day, 7 days a week.</p>
+							<a href="#" class="btn btn-default">CORPORATE SERVICES AND CONTACT</a>
+						</div>
+
+					</div>
+
+				</div>
+			</section>
+			<!-- /Services -->
+
+			
+
+
+			<!-- Parallax -->
+			<section class="parallax parallax-1" style="background:black">
+				<div class="overlay dark-5"><!-- dark overlay [1 to 9 opacity] --></div>
+
+				<div class="container">
+
+					<div class="text-center">
+						<h2 class="fs-40 fw-300">Up and down since 1976</h2>
+						<a class="btn btn-default btn-lg" href="#">GET A QUOTE <i class="fa fa-angle-right"></i></a> 
+						&nbsp; OR &nbsp; 
+						<a class="btn btn-default btn-lg" href="#">CONTACT US <i class="fa fa-angle-right"></i></a>
+					</div>
+
+				</div>
+			</section>
+			<!-- /Parallax -->
+
+
+
+
+
+
+
+
+			<!-- PORTFOLIO -->
+			<section id="work">
+				<div class="container">
+
+					<div class="heading-title heading-dotted text-center">
+						<h2>Major Projets and Award </h2>
+					</div>
+
+					<div class="text-center">
+						<ul class="nav nav-pills mix-filter mb-60">
+							<li data-filter="all" class="filter active"><a href="#">All</a></li>
+							<li data-filter="development" class="filter"><a href="#">Residential</a></li>
+							<li data-filter="photography" class="filter"><a href="#">Commercial</a></li>
+							<li data-filter="design" class="filter"><a href="#">Award</a></li>
+						</ul>
+					</div>
+
+				</div>
+
+				
+
+				<!--*********************************************************************major project**********************************************************************-->
+
+				<div id="portfolio" class="portfolio-nogutter">
+
+						<div class="row mix-grid">
+
+							<div class="col-md-3 col-sm-3 mix design"><!-- item -->
+
+								<div class="item-box">
+									<figure>
+										
+
+										<img class="img-fluid" src="https://safedrup.com/images/red_ele_2.png" alt="escenseur rouge">
+									</figure>
+
+									<div class="item-box-desc">
+										<h3>ELEVATOR OF LOVE</h3>
+										<ul class="list-inline categories m-0">
+											<li>The red elevators for lover</li>
+											
+										</ul>
+									</div>
+
+								</div>
+
+							</div><!-- /item -->
+
+
+							<div class="col-md-3 col-sm-3 mix development"><!-- item -->
+
+								<div class="item-box">
+									<figure>
+										
+
+										<img class="img-fluid" src="https://rocketelevatorslp.com/assets/images/NewsImage2.jpg" width="50" alt="grey elevator"width="350">
+									</figure>
+
+									<div class="item-box-desc">
+										<h3>Grey Elevator</h3>
+										<ul class="list-inline categories m-0">
+											<li>For Boring People</li>
+											
+										</ul>
+									</div>
+
+								</div>
+
+							</div><!-- /item -->
+
+
+							<div class="col-md-3 col-sm-3 mix photography"><!-- item -->
+
+								<div class="item-box">
+									<figure>
+										
+
+										<img class="ico-rounded" src="https://safedrup.com/images/50_2.png" alt=" cinq ascenseurs futuristes"width="350">
+									</figure>
+
+									<div class="item-box-desc">
+										<h3>Glass Elevator </h3>
+										<ul class="list-inline categories m-0">
+											<li>for people who like to show off</li>
+											
+										</ul>
+									</div>
+
+								</div>
+
+							</div><!-- /item -->
+
+
+							<div class="col-md-3 col-sm-3 mix design"><!-- item -->
+
+								<div class="item-box">
+									<figure>
+										
+
+										<img class= img src= "https://rocketelevatorsdazg.com/assets/images/Rocket%20Elevator%20Assets/AdobeStock_162479912.jpeg" alt="acsenseur chambre"width="399">
+									</figure>
+
+									<div class="item-box-desc">
+										<h3>Moon Elevator</h3>
+										<ul class="list-inline categories m-0">
+											<li>Special Project for the NASA</li>
+										</ul>
+									</div>
+
+								</div>
+
+							</div><!-- /item -->
+
+
+							<div class="col-md-3 col-sm-3 mix design"><!-- item -->
+
+								<div class="item-box">
+									<figure>
+										
+
+										<img class="img-fluid" src="https://rocketelevatorsxx.com/assets/home_page/resize-homeelevator.jpg" alt="tube elevator">
+									</figure>
+
+									<div class="item-box-desc">
+										<h3>Tube Elevator</h3>
+										<ul class="list-inline categories m-0">
+											
+										</ul>
+									</div>
+
+								</div>
+
+							</div><!-- /item -->
+
+
+							<div class="col-md-3 col-sm-3 mix photography"><!-- item -->
+
+								<div class="item-box">
+									<figure>
+										
+
+										<img class="img-fluid" src="https://safedrup.com/images/52_2.png"  alt="ascenseur tube">
+									</figure>
+
+									<div class="item-box-desc">
+										<h3>Best view inside an elevator</h3>
+										<ul class="list-inline categories m-0">
+											<li>New Technology</li>
+										</ul>
+									</div>
+
+								</div>
+
+							</div><!-- /item -->
+
+
+							<div class="col-md-3 col-sm-3 mix design"><!-- item -->
+
+								<div class="item-box">
+									<figure>
+										
+
+										<img class="img-fluid" src="https://photos.travelblog.org/Photos/43933/277099/f/2349691-Rocket-ship-elevator-takes-you-to-the-cinema-0.jpg"  alt="shopping center"width="300">
+									</figure>
+
+									<div class="item-box-desc">
+										<h3>Elevator for the Biggest Shopping Center</h3>
+										<ul class="list-inline categories m-0">
+											<li>Shopping Center at Dubai</li>
+										</ul>
+									</div>
+
+								</div>
+
+							</div><!-- /item -->
+
+
+							<div class="col-md-3 col-sm-3 mix design"><!-- item -->
+
+								<div class="item-box">
+									<figure>
+									
+
+										<img class="img-fluid" src="https://res.cloudinary.com/wnotw/images/c_limit,w_1536,q_auto:best,f_auto/v1509653030/kptyau1hnthy5zkpc4iw/burning-man-time-travelers-elevator-art-project"  alt="time machine">
+									</figure>
+
+									<div class="item-box-desc">
+										<h3>ELEVATOR TIME MACHINE</h3>
+										<ul class="list-inline categories m-0">
+											<li><a href="#">Nature</a></li>
+											<li><a href="#">Art</a></li>
+										</ul>
+									</div>
+
+								</div>
+
+							</div><!-- /item -->
+
+
+							<div class="col-md-3 col-sm-3 mix design"><!-- item -->
+
+								<div class="item-box">
+									<figure>
+										
+
+										<img class="img-fluid" src="https://rocketlado.xyz/Rocket_Folder_Images/Portfolio/four.jpg" alt="ascenseur vitré">
+									</figure>
+
+									<div class="item-box-desc">
+										<h3>GLASS ELEVATOR</h3>
+										<ul class="list-inline categories m-0">
+											<li><a href="#">Nature</a></li>
+											<li><a href="#">Art</a></li>
+										</ul>
+									</div>
+
+								</div>
+
+							</div><!-- /item -->
+
+
+
+							<div class="col-md-3 col-sm-3 mix design"><!-- item -->
+
+								<div class="item-box">
+									<figure>
+										
+
+										<img class="img-fluid" src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxMTEhUSExMWFhUXGBsaGRgYGR0dHhodHRoaHR0eGhgeHSggGBomIBsgITEhJSkrLi4uGh8zODMsNygtLisBCgoKDg0OGhAQGi0dHyUtLS0tLS0tLSstLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLf/AABEIALcBEwMBIgACEQEDEQH/xAAcAAADAAMBAQEAAAAAAAAAAAAEBQYAAgMBBwj/xABFEAACAQIDBAgCBwcCBQQDAAABAhEAAwQSIQUxQYEGEyJRYXGRoTKxI0JScoLB8BQzYpKi0eGy8QdDU3PSFiTC4hWDk//EABgBAAMBAQAAAAAAAAAAAAAAAAABAgME/8QAIREBAQACAgMAAwEBAAAAAAAAAAECESExEkFRAxNhMiL/2gAMAwEAAhEDEQA/AHtrF2G0MqfEfmKZWjcA+iumOG5gORmvmW09pXUZCDCxGYd/cw3V2s7Sd4JYh13Mpgx3acapPk+k/td7QXbVu4PtLKMORmf5hXLHYHClGuuCmUZjI1ga/ENZ51FN0txFmBmD+DidPMQfenWx+m9u4G62yUyAlmUhgB5GDrwGtI5UiMcTcNxBl7RYDu1nQ8RTfpTez2bWMQxlhboAkhSdTEgyp8R8VE9J9o4S8q/s6ozmWZguVgBwOgJ8jwFL9h3QQ1h9UuAiPEiI5igbLX2837UFvW7f0kKGPD7KnUmNQfi+tVM+Ay5bjJkzEiUOYabwVYjhwk1852zhjbJw7TnQ9kwACN6nTeSCZPl3Vajb4vbOXNqRLEzBVkgNpxzBgY8aXpW170S2ipJUuGZlmSDmc5nLseyF4zA3Se6hOkeOzXG+ynZHnx99Pwik/QzpCossjMJGttm4/V492h9a74rBuQMozjiVOb1jX1qkhFMie+utptfKtAkad1bWlpHDDZmHD3AD8PxMfAamvb+LL32PDefADu5QK72D1WHe4d7yB90an1MCkWFxpZSWADEQY8CZnxoRld3T3auMOaeLCOc9ke5oaxZNu3dbiy9WPNvjP8qQfvitLbF7mbghB5nT2GtdukTFGCdysD99spb0BC/hohWldvtuh4SF9oP5U46YEC5hUjtBZb8cQOQFcui2zxeKhvhVsx8lOYn2jnSLF7W/abpvwRN2d/1ZYKI4QqgUHi54TDdY9kFiECsbhkaAM0QP7/aPdS/BPcVLhtlgvXQxHdkESaa4a+LYQvARhdSSubih3CCNDvmhdhPZCXs7QGvAL2M/1d+UmY8ZnXxoUgcW7MxLMSZOpJPzp1s8xcf+FbY9Fml+JtAsxG6TGkaTppw8qZYS3L3PEx6LFSuPouwcIGUjUfANDv8AokJkbjqTvFd8B0nvYS8bCBbgd3gEAQLSrb+rEDsxurv0fIj8b+isVHstfO9rYxnvZ1JBA3gwZYlm1Hi3tWONu2tkfYsH/wAR8MG6u8OrfSdQRru3wfSaqcDtvD3Y6u8hPcTB9DrX5gxRZ2LOSWMSTv0ED2FfRv8Ahd0fVsPdv3BKs2VZ3AKJJHMx+GtMs/GbRMPK6fahXtfn/D9M8XauMbVwi3mJVSTAWdB3bvCrXo5/xCxF0EvZVgpAOsT5ECPbjVeU9p8a+ibRxfVWblz7Kkjz4e8V85K5kS3xdtfHUb+cV70x6YW8VhFtWswZ3Gb7qkzr94D0NLeh1h2vCXYhRMHh+ffRZ7EWvSa6LeGW0PrlU5bz7COdKtlCZH8Uchw9jXDb+Mz3wusWVJI7ywB+Qozoxh90/r9Ga06xZ95KRLcCTuAmoC2TexJY65ZPPw8JEeQFXHSXEG3hnK6M0KD3ToTyE84qT6K4fNLfaIUeAn/ajAZ30rcBhEW2oYAmJ9dfzryh8ZjQHYd1eVWkeT4/2XUrIIO4/LyoD92dd8x/Y891U2I2B1SZUzDWfpB8nXSO6e80s2hsx2SSs6bxqCPMVmvRVtNZIuDc3sRw/Ou+JPVYdV+te7T9+QaKPXXlW2wrfWv1L/DveeAGuag9s4kveckQJhR3KNF9ooL1ppg7pRwQZ/MeVNm7LAr95f14Gp9Ps8Rqv5j86aYG9mXLxGq/mOf9qEwy6YYMX7FvFoO0vZueU/kfZqSdGyGd8Lc+DEL2T9l+BHdr81qr6P3lMo4BtXeyQd0xu9DHMV1xnR/BoGdgUNsF5V4KwJkJy7opb1y1k3NJfYkxcwz6MhOniNDRqYi5bAZGKkb4NDbWvjrLOOt/Dc0eODrofUD2o64gkxuYSP1+t1OxlLyZ4Tpfe0W6q3R/ENfXf7072btjCvcAa2ytO4GQf151E4cdosR8Ov8AYetdcNcKsHUkMNZHfU7aL/pFcV0hGChYhOOXNGgHiZ5CkWOcIsDy/v6mh+j10lXDamcwJ3zMH/UvpXl95uD7KkSe7u9/lVI/pvsvZ5tgm4uigu08T3czC86QbXxBdxJk7yf4jqT6n2qjxV3qrI139o+S6KObf6KmcNhnuK2UZjM+YBGnOaPSRpxD4XAXbm5rt5bK+C5gbh5gZamMBbyqw7rzD0Yxpv4/KqXptbVz+xi4qizbQaz+8LK7E+egmp22PpL+onrJMd7ZTp4b6GsnDzaGZgltY0a4YkA65O/T6vf30t2fOXXSLpnzhaL2mk3V7sz+xB/tXPY+IZM+Rom6Qe4iBw3GgEq26ItkhtNJP50XtK6HdnCgAknTjy4cqFcQ3l+QJpVcO8Jt++iEBgZU6ldRm7iI1k8ZpX1ddWTQDxA/XpW5Wp1DlCNbr6e+11w2yf2dUK3OrCTwzXPjM8Dqx5V86S3LDSROvlxp9t3aYuqihSIJJB8oEeppWXhUpGtmu1u+9v8AdswPcCdTu3ca3QVvh1+kU8BJnxAJX+qKeiMhaVWy8LYCT35RBPMyedfQegmC+je6frkBfugf3JPpULdtAraC65gF/FOvzHrV/exPU4F40hIHm3ZHznlVo6JLdzrLj3AP3jkj7oPZ9gKrOj9jKPXX2qQ2YcrKg+qoA8D+o9assCsKoHGqz+Iw+ufS+9FqPCfahOi1jLbU9ylj8h8weVBdMcSWKoN7MBRwxPVYZ27yEUd8DSPOQKqf5Te2hwueXLgSToT415SHF3rFpil22LlwRmaTvIBjfuEwPKspf9DWKSwvSjE2gCtzrEO4XBPmCd8jz7jTPC9K8PcP01g22P17Z/tB+dQ9jEZSQdVO8fIjxFE2rALqpYBSR2vDvH9u/Ss13cfQzs61cGa3dU9YugYZWZT3RBI04ik+1uiRI+FlI4jtiO4x2vakmM2kt26wAhR2VB+yug04HjzrzD7cxOGeFvNkO4McwHJtw8opp3HG/wBH7w+EBo1lTqPMbxWuzMIxuqIyk/a0g8fPifKqgdMVIH7Rh1cH6yaEHyPHj8Qp5s+9h7gD2rpTXdeUHUfxNr6NTGpek9t7LaFuwujAlyfE67+8fIClnS2yb1lcWsh0GS5Gmm7WOAPsxqr210be6c8akg5rZkcBORiI0HeanNmXlDNbYhrdyUPcd4nyP50j5ie6OnrUu4Qn94M9rwuKN3hIEeS+NH7HxBezB+K2Yjw/WlI8dYfDYggGGtsGU940IPkRE+RFO8ReVMSl9RFnErmI7mOjjzDa86c6TlOdjbiaGNxMkitbdruNG28MCIV1Yg6a5T6NEnymu3VkHWQf4hHvUntrYvdXdQcDoeeh9zP4aYbPsnVGH77Qef1f140j2kpDawOOh4bv71Y23U2xdAjsTPiQQTyAc+YFNGRLt/GBiqI0gwJ8F7I+RY/epr0Vy2+suuOzbUXOQBVQPEsD7VL4ResukjSTA8JOp8gKfbWxi28Mlrc2JYtHEWrYyoOZg+tM5ErjcO1283Wkq2IR3YngWzMInugVxs2VR7tsSSBb7WmoCxqB4jv4012w3XG3AUFEZW1MkMo4R4n1pFs2xcQhXQgm0qaDTMH013btedJqocGyjD3bjDU3lCEgSMpUuy+IiOdT2xmT6XrAf3rcJjQT9YE+tUe2WCAWFgdUFLDTVyGdu4neBv4Ut2DYzHEr2dL7aOB495BnTgaQB4nBWSjG3cG7cTB9GA9i1LcVYYXTb3xI7uAHGJ301xSWmTRCjSvwnTVgD2TMafxUuwttuvIRhIbSSBMODx0PwzFChF20Q6qwIOpgiOEcfOumSmRxTo8XbI0Ubhk+I74AyHcPqmtw2HfvTzEa+agiPwCmCpVrcpNNDscnW2wcfw9r/RLDmoob9kcT2Zjflgx5xu50DYUJTTAZghyfFJzEbwsCIPATMx4UETWuGunrF7UDUAAbiJO8cT591Tll4lao8CGa5aVx2pZtRqRAVSfVteOUd1Pul2K7Fiz9pi7fdQQPcn0pB0Stlr9y4dwgA/a36if1vrfpHf63EXCDKoq2l8Tx/qNaY81OXRlsI5mzd5nlw9stWdgxJ+yvzqY6OWN3L03/ACin2Ju5bLt3z7UrzkJxilcVf6zFeCAtz4fl60wu3xcu2bQ+C3qfF/iY+S/D5zSPYttrtxo0Ny4FB7gNWPIQaNx56oXyNAqdWv4uz68a0vxnCe+TdZrkfGxb1Jisqg2bbtraQMDMT66/nWVZPjhoq1bZVUuCLbk5W4A8fIH/ACNxnbZ+Ca9dS0glnYAfr3p90j2ggu9SkNZsr1IXg0fEw8c0nyArmbVPFTMRDD8uHn86YKFuLlPIihb9iIAMg/u27x9kn7Q4d+7uA67OTNMfESBHieNVGWXDrhMOc3VnUE6eOsDTvBp/icQlpTbXU2xA00Zjx5n2rhs2yArX97IIXxY6D0EnnXFcSpdbZOsa+Z4HyG7zplCxMfetL2Ljr1k9kMRK7tRu1rrhm5T86E2jile82kqOyvLT33860tORqrGPepWZdJ8N11hcQPjtdl/FeB5HXme6lOzj1uHuYf6yfTWuXxqOXuCaoNj4kH4hKsCrj2/Xganb+GfCX8wB+jaVJHxL57tRv50Hrc0dbKx4a0rHeeyfP/amv7WwEKYH2eHNTofSp1LYS66LravKLlsjubUehkchTBZy95GlFiZ0JuYkNOZAZ0kHKfTVY8gKaLeKYV7DtFwEBQNR2ipMnhOp5EUhiF1kGjcMB8HHLPM6/KBzo6FEbEt5ri21Gr/Rg9xPxH+XN60r6W7SD7T7J7FsCyngEif6s1UGHu/s1nEYkDWynVp43bhgnlPoKjdt4Q2nw5aCvZ7QMzJOaTvmWJp08Re0LMXs3DsE+4/+NMMZtI2rltUGWQRrqJQjf5z4bq6Y+2Hw7uBuCmfNhA8RBY0Jjb0vZcxqzg6D6y5h/pop4uWPxRYXC3xXCrE+YYn3igtjqYun6vW7+E5dPz96JxYHYkTOXjH2h+tKG6PoD1moBz7jP2R3D9TUmJvropERmXjroZ3HXhSvZjTdJ8fmHprjVEL5n2RjSfY4+kJ8P/GnJyLlqbUOCxDKzlWIExpu0A3jcdZ30QbiGc9tW8R2T6rp/TSvDN2ZneSfUk11s3Z1ossLHKXoX+yWyZR2Q8Awn0Zdf6a6XLmJA+IXQOIi5HlPaX2oXrBXufx1+X9qW1MubUV2CPaIJ00M+z9ocnFMcPgbK2iQ8SDoQQ3jCtMnh8dCNtEqpLgXANYYZvnr6EVum0LdxraCybbNqIJiJ3wZj+Y0tSmp9iYdbeHZm3BWYnwUfn+dIdnoSEHFyXPPQf6geVPukJyYQW10NxktjynM3yA50pwLTeygTHZ8gAZPqxHKtceJtnlzdK7ZkKhOokek0D0j29bFtrIPbAAGhhpE6HwMz5Uzu2vo1UbzJ5CpHbN7rLtqwu4aDmZJ5nQeCzuNTj2rPpRdEcLkUOfqWy3Nt3sfalO1zmFu3xuXCx8hoPn7VSWyEwrsPrtA+6ug9yamz2sXHCzbC84n5t7Vp7Zm8jvH+OFeU82fsW09tWcdoieU6e0V7R5Hp8p6MWxh7F7HNv8A3Vn77b2H3RPMUne2jA6kTvnUeo1p70tIV7WCtn6PDrDHgbh+Nj7DlU1csMSWgiTpHBR41nFZXl2SzlUq3atHeQZyn7Q7v141zXCtn/iAmR9cHcR4ncRz764peKmDr47j61RdH8OWtFiOygz6ncBpA01nUD/FA7dbd0KqW9QEUu08SeHoPekz4d3LXFGp15zPpwqkwWLtuMro9sxJGjrB71MmNOArz/0+j62WB/7bQeaMY9xQXiisRh3zdpSJOumnrRSKAJ79B+f5Dmaf3MDfTQ5WHAMMh99DyNBY6xb+G6rWzwO4cjuoKgsGWUnSVkZvCdAfI6VTna4Sz1rWy5twHAIBy9+u/wD3oC/s8iyqowJudo6wSo+Aesn0o3ZezrvVF2AKgEPJHwaDXx3+njSvJzcSL7QGILlzkKXGa2w07DkSvjB1PM002cbzAgstwD7Rhj6mfeleF2f1WKNpyy25kMBMjeBz3U52DhxeLsRCZuyB6n+1Chj3dwZGt+4PI7vetMFacXuslW7U6HnEGD3Vw2vj+pvm1agooCnWQXA7cTIy5pA8q9sY5Cql0yhjGmmvlqPYUuS1KZdLHUW7GzwYNxWuM3czfBPkPyqM2ndZ0uA6G2VhRuEKFMebAmj8det3LgvNcdSpHbiVIQZB5AgV5jsPmuXnBGV1Jie1m0YSvdJY+UUz1rgztYicKoB0YARE98QPAa0Pij9HZcGQLianT6rIfISK79EriC3aZz2QHDeEAiRyU7++g7bj9kmJy3FP9fh50BmPtk5coJKwdO6W18N9AbNvsguaD94TqO5Rx7taoMHfNq3dxBJXs9SsCTmuHXjwUE86S4W4kXd5zOYjTTKOHnGkUG8xG0JAkQQG4z9Uj865bEwxYXWUjRZgkAkDNMDjurjil/0n5rXPBJ9GfFgPl/enOKMsdzRzicBctL2lIgcR4VxtkgRM1s2PvBCnWMVOkEyPfdyoI3Txoyu04YeIw3q1N6hDfFZmqFmGFJd1QcTFPdi2BcxrEfDbhRy30n2AAC907raE8zu/XjVb0DwXZzne5knz/wATTkDp0kvA37SH4bVs3G8219lAr3o5hdxI7TGT+vNmHKlGJxYu3bz/APVuED7i/wD1kVYbBswZP1Rry3/1TWuXE0zx5uxm0MSttblw6rbWIG8ndA8SdOdQ2wpe81xo0BOm4HRQB4CQB4Cqzbp/9s+YTmpN0IwebL/G/wDSup+ftRhPZZ3nSm2t2RZsnTKAW+Z96mej8v1l361xzHMzHqwpl0pxml9/4cg83MfLWuvRTCx1K93bbkCw9yopwopb2LCHINywByArKmtobRHWNLDf31lLRbfNbt5gpefpLjbz3TJOv60NbWu19UeJGnM8DWjjrLnZ+FRlBOggbye7v512tsJhfgGp72PCflSOuDYMOwE7zEnTx9hVe+HFuxbs7s8XH8EA7IP4dT4k0B0f2UHvgN8KA5+XaufknOufTHaUW3b614lF8EHxe0LzoVEbtHaJe+10bidBu7I0A8DA9aMs7WurBDZxwz6+/wAQI86SMaZbCNrMwuuFBGgIME+Y3afOoUq9ndKW0Vpg/a7YPJoYeppthsfhrpy5Mp7rZ9T1Tjd5A0h//BhlLW2zTuKkMvhu1GvGK1/ZWS1daJukBOzqQm9jHeYC+U0FuqJ9g2rjZkcM0RAJtvA3dkyDG7cK443Z963buWwXy3AoyMuun8QJVp3Hd8XhUxszF3Uts2cnWFVtR6Nu9t1W2zNpOtnNd3EQQs6g9wYmORG+notxEbSZ2tC7bJW5Y0Pih01HGP70fhMUv7IboMAKSVjeQRIkRBZio5mtXx6HFu6r9GSQy8Cu4z46TXm2nw9tWwttSjMVbdowAJBGsMOHDjSOdFF+/buNnWZeGI8SNYI4yNQRxNOMaAMFbOX6Vm0kcZjTwO/maVdHMIC75lBCar5tuFNsQs3Qk9iysnwJn5CW50SjRBjcDKssHRYJ4btJ/v50y6N40hjOXJdw4NwMAZNskEg8CJHpQwxYuXYmBBJPCBJXkoJPKttlYR2+Edm3eytO4JdHa3QT2o0HfR0Jy06NTNy2R9bcdeB3jjxEeNM1VDavowyKN+Ua6EGQp3bhpQWCbqsbctAyHO/7pO7mYom4xY4gQIIK6EfZYbt+kCg2u27qizbtJLgFnbepLlgN3AhQPWluEtr2pbJ29zA9w3wJ4d3GisFYFwWw3wxJ8goYjmFrvijcNhGa3JgRxhfpFAjkY8l8KWzL9o4dgGIhgFGqEMNW4xu3cYrjgV7CeLE+gI/tXBlljIiBJ5Bj/Yc6Mw2OYBAQrAIdGExmM7xDDdwNMbdnWh3Wj72IsZiIdRMBl7QPjlbKwHM1r+x5v3bo/gDDfytBPKaD2VslcivdRmItMphlKnuIj51yW3mIUbyQPWgzezaK4RE+tff+n/arR8X+zYUwDmKEDwLaTyEmp+xaz4pLQ+G0gHM/7U76UEE2LA+sxY/dSAPWSeVPGIypdsnCgOgI+FZbzMkj0Vhzq2wSZbR72gfmamdkJmZm+00cgYB/oP8APVeE+Be4SedVn2WHRN0wu5bAXv8A9qI6JWOrtlj9S3/U2v8AcUo6U3Osv27XCRPLf86ezkwhPG4xjyGkes1U4jPfO01t1i/U2uN24WPkOyPmfSnR2quHt3Lg1cgW7a+epnwAC0gvvOMPdZthecf+Te1E4zCFbK3n1a5qP4V4DnA18qPRzgjuW8xLOxLHU6mva6W7luO0dedZUeU+FyR3IVci7uJ+0f7UXgUyjNG7WO9jog9daGFqIJIKE6ON3kfst4GnmzMGbly3bGkkMfAkdn+VQW84olVo42bh+qw3e94wD/CDqfxNJ8or590qxouXyAezb7C8t55meUVe9Kdoi2jumgQC3aHjED0EnlXyt6MquRzIryK3IrAtSYjA4ooYDFe5gYjn3H9capP/AFJcGXMqsoABDDtAjjm3yaWbCwCst6865ltpAHfcfRRyEt+GvCggRqDoJ3/dbxHDvHlQmqvDXrN8AZSsdrWGURv10YUfibZu28qEHKN6ENr4roR5Can9lMtm0xJ36Qd8Df7wvrSm+XzKASGY/ENPMyPWqT32oNj7FZA6Oy/SGGIOqjgSpg7/AGJpbtFVu2FfQvY4jjbPEceyfaaZWNtXBct2my3FMlusGbKoEzO+YB491K8JtMm+zMmjEyg3ZToV8dPWppyidglQgeezBuE9xGkH2PrXgtE4W7dYwX7R0n4iAF/l/OvcbdtD/wBpZQobhBJ4FNNV14iRuFc+lGMAS3hxoc2dvHTKmncO3ROIdJdn4dsrMQFJ7MDdA3xyB9a7FDbu3FlWnhInTTyO/fTYogwdssvaLsZ/hUR7zHKlOMtgdWT3kMfvcD6j0opxzQjr7JPYmVOmg0JEe1GpeJxMZRlcbx4idR5yKWbUt5QpB+FhTOyYu2syiSYkGOJGo3EQaIBfR2wC1nsyFthmB13plC+MswFNNu3FW+ltYGS2BPjI/Ig8zQGwcVbRlVCf3sMWEQq5uPGGg8hXK5iM17rD9bMT4CQfYChUCbfWEdjvZgvJVDH3ZfSlblQujAnIoGvCP80d0sQqzLOpIBHccqFv6uz+Gpu3h2XKvBiSe7TT5ZjzoJV3sAgw4uEtn7o01OmvfGsaUsKTpXHa202UW1Ux9aPCI3eM1lra/WMYtiYgAGDJ08u88qQ0LGMuKIDHJwBErHkZHtTDYQV7mYqoydrsyNIP1d3y8qU9kGJe03cwI/39qZ7PHV4a9dBlrhCKQI8/eRQai6E2y9y5fP1iSPyojat2cRecf8lBbX73+WMc6Y9GbAs2ATuAk+SiT+VTyXDlQxLXHNw+MHQfzZfWtcYzyVGwcN8C92nyHuFB51QhxmZuH5ClXR5CqZm1IWfaB+vCicbe6uw7eH+9T3TvETNhusxVx+CiOZ0PsT6VUbcZUNq2TC21BY+QkmkPQnDZirH61wufJNfQ9oUN0mx3X9dcU/RghQftkncP4QJPjHnV5fGcC7FQ3BcuR2rjzHjMx/Mwpt00bIFtjcihRyAArp0Twf7kd3bPLtD3yihtqqb2JVN+ZwOU0ZD0nbeBYiYbkKyqzE20zGCAJ0A4e9ZXN+yHqoG1I1XedCp3NPAjdVf0fXqke5kZSQVGoIk6GDvO7jugVObIwpe4ABMRA72bQVY7RurZUjellf5m/uWraRUtqG6a4ybi2QdLYlvF21PoIHM1LkUyxYLEsxksSSfE6mhMlZ+W23joOwr0CuhWmfRrZ4u4hA+ltZe4e5EGZvUCOdNOjDHWXs4exYTR466795x2Ae6Ej+ehcCXdwpWZ0Pce7Xvnca1xt9r9+5eI1Ykx3eA8AIHKnfRqyQGukzlHZn7R0XXz1/BVRFvLe51AJtOYI07WoOsEgrBGsjjWg2L/ANNzHgc49NG9jUntHFZ7xcHSYE/ZGg9d58zTjB4eTNi/+GZ/p3j0NI9CxhSBcDIWd4TszOTeSeI3AR51mEw6qr3JOgymd/d4Sf8AFGXtp3FibfWqMoM6mYEt3gTPERTFsbY1S4QkgSH7Q17y0EcmppsIdvbOdbVu7IDoOsQ75tzrIGog6+tAKgvYsXiyldCYbMAAAAO/f+dUe08D1apeRgVUgRmLZgxMjUaandJ3mlK4rNiOrYIAAGtkCMy6mPHfr92lVR7jrZ6wWhEfWjhBzH1OnOlF64Ha5OmoVT/FvmPJR/LTpB2MRemAqlVPdl0082IFJXsNbSycoIYEydzFtDHHd86AHvxctM2glM2h3mYIjvBpvsRFYLddhFlDeidTmUBR55xSNXsN2SerKsY1kHMBMT5bp4VyXCMyKyQSmZSJ10aRRs9GWHBDsAZ7Z08yp5zmprgcvW2y+iqxZge5VZiOeWOdL8DC3XczCItzUcQq5R/PArps+6TbZ3IM3FAO4wpDMfHUqOdAAbfuFrihvizMzfeLEsfX5VwvYd0EkEaAL4+IPHQe9e9Tcv3zA1OaJ03zx8zTLE7NyW1JYZgxDJIJG7fHl8qDhOyBlLOJ4bta4W1VTC5fEOTr3QdI47yKaXE3KfOgm0MTHg6SD5HU89KRupt3CjIivqD2ZDIfI6AcpqlbB5RhcP8AZXO3n+vnSzo9gQxB0EsBCmQY47ye8RNUuzV67F3G+qCEHkP0PSniVOduP1eFyD4nyoPxan2pbhLYa6Y1CAIOUEn1KT5V5tjGG7eRNy281wn5T4bveiOjdjsqYie1zPa+TAfhrTrFn3krMOMtqO8gchSfppicuHVftH5/4FF7QxGXsqO1EDxY7vcipja+NfEYhLTqo6swcrZlMb4MDTQj1pY9jMZauMtlkWVUIEdvOCVB7yZnwmgscv0Vi0N7sXj+lfzp3j7RTCqo33XLH2UfKaVImbFxwtKF9B/5E1fdQq9kgIl1+CoFXnqfSB60j2b2r7OdQiseZ0Hzpzi+xhR3uzMf9I9lBpRsu5b6p5MM7RM7wPA6HhUZ9C9uJcHU3IJ4R/8AWsoXF3EVipymI11GkCNAY3Vlc3jl8VwJ6JYXIhvMNVEj77jT+VTPOk/TPHlVSyDq3bf5KPmfSqy+BbRbbGAoL3D4725Aacq+W7UxhvXXuH6xkDuG4DkIFdGXS8e3Brs1oa0mvRWWmm3uWqHBWupwbMPjxLZF/wC2hBY82yjyBpLg7DXHVFEsxCgeJMVQ7QuKbwtq+ZbA6pdIkKTLLrqSSTz406QTD4RlgAanQU46Q3eowgQHtMP9Qgf0At5vXfZttblwD6g3nkZ8oUHnFTvTTHdZey8F3juLQY5DKORp4W+O6WUnlwm2FFbNwrsWdYAtgMSTG9goE95J08qEZaeqOpw1tMxV7x61tPqCUtg+BOdua0bIVsvFOX7TkoN4YTu3wT8J4acYrd8bausA9sld4YajQ8dze9cEYWbK3bkNmMacRprx4R6eFdLeHsXD2GNt23AyJPhvDcoppMLVlGBVH1fUAHXQMvwmDGraid/hXDFYBQQLjtbNrtK2WZU79PA6+GtF29nk3Fc5SoHZnQAgQvaGh0GvfJofDlmuZbkJAZtVOum4fejnNMgu07gFqzh7TArc7RJGpCmTPdJk+a+FCY65lAB3WbcD7xkx4amOVbWsPbF0Q7MYLANwSZj1kT517i7GYISf317SeIAnXwBK+tStJYq2RosHQAlu9fHyJ9K628T1aMQXRsynTUQRBnvEiubXCGZWIZcxgkd8zB4AzWWRAYI2QFe+fhIMeO+gzJNqsygElkKCQNJgsO7Q6A7uFNdoMLVoqsgAKoB35j9I0nSTJC8qU7DwZuXbeeCq5i5XcFXtnTxiOdb7XuktlJkgl28C5zR8vSj0IK2FtRLdxMwbcuoEiRrr3a12xe0WvqqXDLqdBlA7JYEzABYxxPvQGxriZixBldJO4nX8u+j7nx3HCxuCzviB899ADXbvxH0/3oVpVfrqOTofy+ddMU8QN3GSJHOuFowwIUEyPgYiRv7S/FHpQay2PhhbtZ2gZbZY+Z8PU016IYbLaLneR7v/AIPtS/EuWwyDUG8w0PBQPDnT24/U4Utu0Lf/ABX3mqkRanpzm+//AFLgtKf4Zg+2v4TVdsKzqO78t/tMcql9n2P3Ns8FLt5tp6gF/SrPACLbNxI9zV5daTj9Kdv4rIpuayW7Mb53jXhu38N9I+jNgtcZ953DzOkAcBAIFOOk6fQEkA/qf7etdug2D+AnvzHyXd7iOdGP0srumPSIgXET6tpfZRSDo+pIe7HadjHid8epFF9IMVpffi0Wx+I9r2mjui+F1sp3Q55Av/4iqhQR0tYIFtjcihRyEUmxitbw9gFM2mYxvBPaACyCdCOFF7exJbEAABizZQG3a6a+s0B0vxlvW2JLGBm0iBOUAd0AbqiknXXOS3eayibGFYqCBpWVroD+mW0ctorPavHX7oMn1MD1qDJpp0ix3XX2YfCOyv3R/cyedLIrDLmtY5xW1bAVsFpGd9Hfoku4s/8ALXLb/wC64IEfdWW5ClimBBpttxOrSzhBvQdZc/7jgGD91co5mg9n4XrLipG8jn4c93OnpNqk2WrWcOb1wgyp4akCCdZ46Lun0qIuuXYs2pYknzOpqu6cYoIq2FPgfEKdfVyT+Go9DU5fF4GOy9iNeZVGmYgT3DiT4Aa13vYlb2IZQkozBU71tqAqiPugHhrNMdl44JhrjHQx1amCdXnMeSiPxCvOjeHCG5fYqQgkEcNPY7j5A1n+Pyt5afl8dcEvTG8OsWyN1tYMd5/U864bL2hdCkkZkUgEnSCQdJEE6A9+6l+NYu7Od7En/H5U/wAJgISzYBKs30raaEtGUTu0QKfxmtN7rKzUGWsYqqoRzbLa9nhBiCY0HhFM8Jj34hXE6FTlI8TEiR3mp4YxOse0LedVJA+1A3+EzTbAIgUlJQuIk6EBT2oBOnmSNwqi0F2hhLasSS4VMxVlAJKx2hrvHH1oHH3gxLKezaUBI4EgHTv1I3/Zpxibb9ZneWtKpK5Yk6aTp2piCRNJcdY7IyoESQBvg7yOY7Q5eVIek5dtFQsE66mO6hm+MEJI48PlpTbGDU+nIULLeKiAY+qe4+dKqhz0btAWrtz7TC0DpooAuXTppEKq/ioXCYY33cqJYlmgnujjwiYFNdp/QYdLfFUAP37v0j+fZyLyrTolet2mZrkjrAMuk6SZ8dTHpR/A54fZ+Qx1eRgJILZhm8+AiD3a10cajfqSdf1vrfFXcwPbDNduZuzwTeRPoOVa5xmPp6f5pmTXXLOxGbTTsHXTvT/Irvsu11j8DOghcp13yBp6T512xGz7Z147+7/HrNPdhWApSZJQZzmk+O/jxHKjRbNMQmbEJbG60kczp/c0d0r/AOXYH1mCn7qb/eTQXRUl7j3zxYt/Lu99KzaOI/8Acu51Fi2f5iCSPPeK0nbO9O2z1zXLjfxZR+Hs+hPWVVMsIq9+v5CpnoyhIAjdpPeePvPqaqMTrcyjhCj5fOll2c4ic6X3+xbtjexn1/wBVBsK11dm432VCDn8XuJ51NbSYXcco+qktyG72HvVNjuxg0X61wljz0HsBVemaV2mC7WLXF2LHmYHsT6VY7FQDrbvBUyj8Rn2yj1qUwS58Y5G60mUeBjL/qY+lVlxurwZO43GY8h2R7LPOj0cTVi4WxOaCcgZ/wCUGPc1L4m5mckOYJJK+EwJ1gxHh5VR7Ntyt1/hzEKGG/fOnMDhxrjtywOtsWgSzESzHeSTAk8d3vSk3U7UWxsEosWwYmJ9dfzrygcZauM7FD2Qco/D2fmKytdH5Pl0V6Fq02n/AMPcQmtordHgcreh096mMXgblo5biMh/iBHp31zNgYFNujeGVr2dx9HZBuv4hdy+ZMDnS0rTjEHqMGq/XxBzt/20MIPxNJ/CKYAX77XHa651ckz4zr5a1SdDcKVz3yNQOz5nRffX8FTFss2VO6AAO+q7a939mwQUHtMBr4sIH9Mt5tTn9Z+0dtzGdbeZgZUGF8hoPXfzoANWRTLo9hg14MwlLYNxx3hNQPxNC/iqa0MNsWmtWrVsERbH0kHXrLgzNI7goVNfsmicaeowyWmAU3SCQO7j+v4q4bHTrrzK7hmuHOw3wQwaTwAB4d1AdLcd1mIYD4U7I5fqOVROZTl5NL+Dw9w2kQ7zLn7KgSx5KCazDY+Uv4ogrvCqTIBO4ARpAMcqU7NlbNy4T8Z6pe+NGuEcsq//ALDRm2DlsWbA3xnbhvmOW81P4sP1497aflz/AGZdaTtrPnUISGJABBjUmN9VCXLgzW3CXDu35cw4x47qC6OYKcShbcoZ/RTHvFCbfvRdQQDlUEg7paWM+taS8IuJqgyfA9yw0zDCV8uIPOuW0sOIzdp4GZWSDJIhvA666ULg9rsBvIHce0vodQPKj84e2wRYbRvom0JGuqEiB60J6TRSJB0jTWmmx8Ot57aMQe1LmCALdtczRO4EA0Ldw5MwyqfiCuSzHz4gzxp90cweVbjtxi0PAHtP/SoH4qLjuxUui7pFeLXUzjeS7jfBcyRyGUCi9rgObYYsEtgKp00A7IGm/KNY8BXDFdq6zd3+8fIUK1nsZSAZOY/r1p6Iy2kVV8yEMq2wF0iNTw76Vo0Ct2WEA765akgUoam2J0fbEWHcAGDoDx/X51vdbJausVKtASDvkHX3p9sfaSWMMqjWASSpB18RIIjQcaRbQ7RtW+JJuN8/nFXpnvZlscrZs6+A5DU6eYqft3y4On764WY/wqZj1X3pr0l7NgKND2RzYz8qHwuHi4qj/lqBzPaPIhV/mqsfpZfFV0cshYJ3KCx5DfzPzopbkBnPAFv1zNZgly2WPfCj5n5UFtu/1eHY9+np/v7VMPLiFXRy2bly9c4lgi+ZP+I51T9Jrii4ifVtLJ8lFAdBsHAsz/Fdb8vdV9aE6S4uVvv3kIOZlv6Qau/EOHRpT1dy6RLO55wNfVm9qoOmNwW7aWhuRQPQR+VcOjGFj9ntkboY+YBuf2FC9JbvWYhU4FhPkNT7A0UXpmyWRMOtxp0BYDvkSIEdw+dJdk3zdxRvNwlj4AD2oXpZtDNc6kyoTsiNZJMGRprAOvcaM6OWuw5+0VQfiOvtSw7KKfCNlRQRrEnzOp9zWUDi8bDkZJ8YnhWVpsaUb7Dya2br2/Ccy/ynSh8W91VIxFq3dSNSIBjxRtD61lZWDUjxnRjA3xmTNZbuWY9NR6Us6Q9ELlxutV5AAAggABRAAUj899eVlMEuw9jsL4V403xw75HlO4nWuPTbG57wQaBRMeLbvRQB61lZR6KdpwimbDq8IPtYhz//ADtHdzc/0CsrKSjLoygs4e9iSNYyr7/5HMVJMSSSdSdSa9rKKUV2DwU3rOH3CyoLfeMO58dSF8QgpRtbF9Zfd+EwPADQVlZRejnZj0WE3bn/AGXj1WlG3knEP+H/AErWVlTelTsOiRWwHGvKyiCjFx9z60XB/GJI8m+IetNsDtm0U6sg24n+IdoiZ3HWI41lZTlTXS1sdssmGzsoDqdJZtZBE1TX/wDh2LihrV3KSNFcSInTtDUbjwNe1lVotojbuz3sXjaeAVA3GRFc9gYXrcTbTvYfOPzmsrKSreFf0i6NWrVy21skS8ZeRP5UBhB1mJY8BCj5n8qyspojfbLdZiLKedz+w9q32Kubt/aJbkTp/Si+9eVlXf8AKZ2rb2i218Mx5/4FTnTG7PVWRxj31rKyliM1XslRbtXn+yotryEH/Sp9ajtpqXNm39t5PMwPYGsrKr2Sy2GRmu3OCIAPxkn2Ce9SV66XxiCTAJY+IAkivKylfZUj2lna4WLBhmObjBAgRI0kk7qp9h24t2vHPc9OyP8AVWVlPDoLTYd/CiwnWEZjLHssfiYsBMdxArKysqNNNv/Z" alt="ascenseur montagne">
+									</figure>
+
+									<div class="item-box-desc">
+										<h3>Big Glass Elevator</h3>
+										<ul class="list-inline categories m-0">
+											<li><a href="#">Nature</a></li>
+											<li><a href="#">Art</a></li>
+										</ul>
+									</div>
+
+								</div>
+
+							</div><!-- /item -->
+
+
+
+							<div class="col-md-3 col-sm-3 mix design"><!-- item -->
+
+								<div class="item-box">
+									<figure>
+										
+
+										<img class="img-fluid" src="https://4.imimg.com/data4/WF/IG/NSDMERP-12097095/capsulelift-500x500.png" alt="Very long tube elevator">
+									</figure>
+
+									<div class="item-box-desc">
+										<h3>Very long tube Elevator</h3>
+										<ul class="list-inline categories m-0">
+											<li><a href="#">Nature</a></li>
+											<li><a href="#">Art</a></li>
+										</ul>
+									</div>
+
+								</div>
+
+							</div><!-- /item -->
+
+
+
+							<div class="col-md-3 col-sm-3 mix design"><!-- item -->
+
+								<div class="item-box">
+									<figure>
+										
+
+										<img class="img-fluid" src="https://pbs.twimg.com/profile_images/1091505224403959809/xPd9exOh.jpg"  alt="cab elevator">		
+									</figure>
+
+									<div class="item-box-desc">
+										<h3>Cab Elevator</h3>
+										<ul class="list-inline categories m-0">
+											<li><a href="#">Nature</a></li>
+											<li><a href="#">Art</a></li>
+										</ul>
+									</div>
+
+								</div>
+
+							</div><!-- /item -->
+
+
+
+
+						</div>
+
+
+				</div> -->
+			<!--**************************************************major project**********************************************************************************-->
+			
+			
+		
+		
+		
+		
+		
+		</section> 
+			<!-- /PORTFOLIO -->
+
+
+
+
+			<!-- Testimonials -->
+			<section class="section-xs dark">
+				<div class="container">
+
+					<div class="owl-carousel text-center owl-testimonial m-0" data-plugin-options='{"singleItem": true, "autoPlay": 3500, "navigation": false, "pagination": true, "transitionStyle":"fade"}'>
+						<div class="testimonial">
+							<figure>
+								<img class="rounded" src="data:image/jpeg;base64,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"    alt="" />
+							</figure>
+							<div class="testimonial-content p-0">
+								<p class="lead">This month We would like to congratulate Dave Lapointe.</p>
+								<cite>
+									Dave Lapointe
+									<span>Rocket Elevators - employee of the month</span>
+								</cite>
+							</div>
+						</div>
+						<div class="testimonial">
+							<figure>
+								<img class="rounded" src="https://i2.wp.com/codeboxx.blog/wp-content/uploads/2018/11/046A8150.jpg?resize=880%2C312&ssl=1" alt="" />
+							</figure>
+							<div class="testimonial-content p-0">
+								<p class="lead">Our CEO Mathieu Houde, unconditional leader of Rocket Elevators.</p>
+								<cite>
+									Mathieu Houde - 
+									<span>Rocket Elevators - Chief of Executive Officer</span>
+								</cite>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</section>
+			<!-- /Testimonials -->
+
+
+
+
+
+			<!-- News -->
+			<section id="news">
+				<div class="container">
+
+					<div class="heading-title heading-dotted text-center">
+						<h2>Recent News</h2>
+					</div>
+
+					<!-- 
+						controlls-over		= navigation buttons over the image 
+						buttons-autohide 	= navigation buttons visible on mouse hover only
+						
+						data-plugin-options:
+							"singleItem": true
+							"autoPlay": true (or ms. eg: 4000)
+							"navigation": true
+							"pagination": true
+							"items": "4"
+
+						owl-carousel item paddings
+							.owl-padding-0
+							.owl-padding-3
+							.owl-padding-6
+							.owl-padding-10
+							.owl-padding-15
+							.owl-padding-20
+					-->
+					<div class="owl-carousel owl-padding-10 buttons-autohide controlls-over" data-plugin-options='{"singleItem": false, "items":"4", "autoPlay": 4000, "navigation": true, "pagination": false}'>
+						<div class="img-hover">
+							<a href="https://elevatorsymposium.org/">
+								<img class="img-fluid" src="https://www.elevatorworld.com/wp-content/uploads/2020/08/Elevator-World-International-Elevator-Escalator-Symposium-2021.jpg" alt="symposium" width="300">
+							</a>
+
+							<h4 class="text-left mt-20"><a href="blog-single-default.html">Elevators Symposium 2020</a></h4>
+							<p class="text-left">The 2021 Elevator Symposium will be in Los_Angeles. The honorary president this year will be Sylvester Stallone.</p>
+							<ul class="text-left fs-12 list-inline list-separator">
+								<li>
+									<i class="fa fa-calendar"></i> 
+									3rd jan 2020
+								</li>
+								<li>
+									<a href="blog-single-default.html#comments">
+										<i class="fa fa-comments"></i> 
+										3
+									</a>
+								</li>
+							</ul>
+						</div>
+						<div class="img-hover">
+							<a href="https://www.elevatoruk.com/elevator-awards/">
+								<img class="img-fluid" src="https://www.elevatoruk.com/assets/News/Photo-1-v5__FillWzgwMCw2MDBd.jpg" alt="elevator award">
+							</a>
+
+							<h4 class="text-left mt-20"><a href="blog-single-default.html">Elevators Award 2020</a></h4>
+							<p class="text-left">This year, the Elevators Awards will be Hosted by Joe Pesci in New-York City.</p>
+							<ul class="text-left fs-12 list-inline list-separator">
+								<li>
+									<i class="fa fa-calendar"></i> 
+									23th march 2020
+								</li>
+								<li>
+									<a href="blog-single-default.html#comments">
+										<i class="fa fa-comments"></i> 
+										3
+									</a>
+								</li>
+							</ul>
+						</div>
+						<div class="img-hover">
+							<a href="https://www.ottawapublichealth.ca/en/resources/Corona/COVID-19_ElevatorEtiquette_11x17pstr_BILv2_updatedApr1.pdf">
+								<img class="img-fluid" src="https://cdn1.sph.harvard.edu/wp-content/uploads/sites/21/2020/06/Elevator-social-distancing_400x300.jpg" alt="elevator covid19">
+							</a>
+
+							<h4 class="text-left mt-20"><a href="blog-single-default.html">press release: elevator and covid-19</a></h4>
+							<p class="text-left">For all our customers and users, we would like to remind you that it is necessary to respect the rules of hygiene and physical distancing in elevators</p>
+							<ul class="text-left fs-12 list-inline list-separator">
+								<li>
+									<i class="fa fa-calendar"></i> 
+									20th feb 2020
+								</li>
+								<li>
+									<a href="blog-single-default.html#comments">
+										<i class="fa fa-comments"></i> 
+										3
+									</a>
+								</li>
+							</ul>
+						</div>
+						<div class="img-hover">
+							<a href="https://time.com/5799872/electric-elevator-history/">
+								<img class="img-fluid" src="https://media.istockphoto.com/videos/thank-you-animation-video-id1087068566?s=640x640" alt="thank you">
+							</a>
+
+							<h4 class="text-left mt-20"><a href="blog-single-default.html">Rocket Elevators Over the Top - Times Magazine</a></h4>
+							<p class="text-left">According to Time Magazine, Rocket Elevators is still on top of the most lucrative companies. Thank you to our customers</p>
+							<ul class="text-left fs-12 list-inline list-separator">
+								<li>
+									<i class="fa fa-calendar"></i> 
+									23th aug 2017
+								</li>
+								<li>
+									<a href="blog-single-default.html#comments">
+										<i class="fa fa-comments"></i> 
+										3
+									</a>
+								</li>
+							</ul>
+						</div>
+						<div class="img-hover">
+							<a href="https://www.cbc.ca/news/business/elevator-broken-1.3689394">
+								<img class="img-fluid" src="https://media.timeout.com/images/105607478/630/472/image.jpg" alt="montreal city">
+							</a>
+							<h4 class="text-left mt-20"><a href="blog-single-default.html">Broken elevators reaching 'crisis' proportions across Canada.</a></h4>
+							<p class="text-left"> After several months of negotiations, the city of Montreal chose Rocket Elevators to refresh all the elevators in public buildings in the city.</p>
+							<ul class="text-left fs-12 list-inline list-separator">
+								<li>
+									<i class="fa fa-calendar"></i> 
+									21th may 2020
+								</li>
+								<li>
+									<a href="blog-single-default.html#comments">
+										<i class="fa fa-comments"></i> 
+										3
+									</a>
+								</li>
+							</ul>
+						</div>
+						<div class="img-hover">
+							<a href="https://www.sickkidsfoundation.com/waystodonate">
+								<img class="img-fluid" src="https://www.globenewswire.com/news-release/logo/478230/0/478230.png?lastModified=09%2F08%2F2017%2007%3A05%3A20&size=2&v=1159513" alt="sick kids fundation">
+							</a>
+							<h4 class="text-left mt-20"><a href="blog-single-default.html">Rocket Elevators Give 1 million $ to the Sick Kids Fundation</a></h4>
+							<p class="text-left">Encore une fois, Rocket Elevators se distingue avec son implication social.</p>
+							<ul class="text-left fs-12 list-inline list-separator">
+								<li>
+									<i class="fa fa-calendar"></i> 
+									8th June 2020
+								</li>
+								<li>
+									<a href="blog-single-default.html#comments">
+										<i class="fa fa-comments"></i> 
+										3
+									</a>
+								</li>
+							</ul>
+						</div>
+						
+					</div>
+
+				</div>
+			</section>
+			<!-- /News -->
+
+
+
+			<!-- Clients -->
+			<section id="clients" class="alternate">
+				<div class="container">
+
+					<div class="heading-title heading-dotted text-center">
+						<h2>Our Clients</h2>
+					</div>
+
+					<ul class="row clients-dotted list-inline">
+						<li class="col-md-3 col-sm-3 col-6">
+							<a href="#">
+								<img class="img-fluid" src="https://www.commonwealthplywood.info/wp-content/uploads/2017/05/commonwealth-plywood-distribution_tr.png" width="200" alt="CPD logo" />
+							</a>
+						</li>
+						<li class="col-md-3 col-sm-3 col-6">
+							<a href="#">
+								<img class="img-fluid" src="https://pentagram-production.imgix.net/1a6b6172-42fd-425c-87f3-0f354f1e2c78/mb_formica_01.jpg?rect=%2C%2C%2C&w=640&fm=jpg&q=70&auto=format" width="200" alt="formica logo" />
+							</a>
+						</li>
+						<li class="col-md-3 col-sm-3 col-6">
+							<a href="#">
+								<img class="img-fluid" src="https://www.uniboard.com/images/image_defaut.jpg" width="200" alt="Uniboard logo" />
+							</a>
+						</li>
+						<li class="col-md-3 col-sm-3 col-6">
+							<a href="#">
+								<img class="img-fluid" src="https://www.hardwoods-inc.com/sites/default/files/images/brands/egger-logo.png" width="200" alt="egger logo" />
+							</a>
+						</li>
+						<li class="col-md-3 col-sm-3 col-6">
+							<a href="#">
+								<img class="img-fluid" src="https://miro.medium.com/max/500/1*JvnSTWTyluvbGnCOfAqHaQ.png" width="200" alt="cobra kai" />
+							</a>
+						</li>
+						<li class="col-md-3 col-sm-3 col-6">
+							<a href="#">
+								<img class="img-fluid" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/US-WhiteHouse-Logo.svg/800px-US-WhiteHouse-Logo.svg.png" width="200" alt="white house logo" />
+							</a>
+						</li>
+						<li class="col-md-3 col-sm-3 col-6">
+							<a href="#">
+								<img class="img-fluid" src="https://i.pinimg.com/originals/86/b9/36/86b936ba6fb481b0293a3fe821cca78b.jpg" width="200" alt="nasa logo" />
+							</a>
+						</li>
+						<li class="col-md-3 col-sm-3 col-6">
+							<a href="#">
+								<img class="img-fluid" src="https://supergeek.de/en/composition/lazer-unicorn-Polygon-Laser-Unicorn-Einhorn-Glitzer~eJyrVspUslJQSk_MyUktqlTSUVAqAPINDQ2NzEDs_GIgL680JwfIKUEwC0BsQ1NTE2MLUwszCz0DkDSSfCaIHQ1RYGZsbKhnEAsUTc7PL0AyLgNkBpCRAhWrBQAQHSSh.jpg" width="200" alt="laser unicorn logo" />
+							</a>
+						</li>
+						<li class="col-md-3 col-sm-3 col-6">
+							<a href="#">
+								<img class="img-fluid" src="https://i0.wp.com/www.mediasportif.fr/wp-content/uploads/2013/11/NBA-logo.jpg?ssl=1" width="200" alt="nba logo" />
+							</a>
+						</li>
+						<li class="col-md-3 col-sm-3 col-6">
+							<a href="#">
+								<img class="img-fluid" src="https://sportstalkflorida.com/wp-content/uploads/2013/06/nhl-logo.gif" width="200" alt="nhl logo" />
+							</a>
+						</li>
+						<li class="col-md-3 col-sm-3 col-6">
+							<a href="#">
+								<img class="img-fluid" src="https://azbigmedia.com/wp-content/uploads/2010/10/google1.jpg" width="200" alt="google logo" />
+							</a>
+						</li>
+						<li class="col-md-3 col-sm-3 col-6">
+							<a href="#">
+								<img class="img-fluid" src="data:image/png;base64,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" width="200" alt="polyform logo" />
+							</a>
+						</li>
+						
+
+					
+				</ul>
+
+				</div>
+			</section>
+			<!-- /Clients -->
+
+
+
+
+			<!-- CONTACT -->
+			<section id="contact">
+				<div class="container">
+
+					<header class="text-center mb-60">
+						<h2>Contact Us</h2>
+						<p class="lead font-lato"></p>
+						<hr />
+					</header>
+
+
+					<div class="row">
+
+						<!-- FORM -->
+						<div class="col-md-8 col-sm-8">
+
+							<h3>Drop us a line or just say <strong><em>Hello!</em></strong></h3>
+
+							
+							<!--
+								MESSAGES
+								
+									How it works?
+									The form data is posted to php/contact.php where the fields are verified!
+									php.contact.php will redirect back here and will add a hash to the end of the URL:
+										#alert_success 		= email sent
+										#alert_failed		= email not sent - internal server error (404 error or SMTP problem)
+										#alert_mandatory	= email not sent - required fields empty
+										Hashes are handled by assets/js/contact.js
+
+									Form data: required to be an array. Example:
+										contact[email][required]  WHERE: [email] = field name, [required] = only if this field is required (PHP will check this)
+										Also, add `required` to input fields if is a mandatory field. 
+										Example: <input required type="email" value="" class="form-control" name="contact[email][required]">
+
+									PLEASE NOTE: IF YOU WANT TO ADD OR REMOVE FIELDS (EXCEPT CAPTCHA), JUST EDIT THE HTML CODE, NO NEED TO EDIT php/contact.php or javascript
+												 ALL FIELDS ARE DETECTED DINAMICALY BY THE PHP
+
+									WARNING! Do not change the `email` and `name`!
+												contact[name][required] 	- should stay as it is because PHP is using it for AddReplyTo (phpmailer)
+												contact[email][required] 	- should stay as it is because PHP is using it for AddReplyTo (phpmailer)
+							-->
+
+							<!-- Alert Success -->
+							<div id="alert_success" class="alert alert-success mb-30">
+								<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+								<strong>Thank You!</strong> Your message successfully sent!
+							</div><!-- /Alert Success -->
+
+
+							<!-- Alert Failed -->
+							<div id="alert_failed" class="alert alert-danger mb-30">
+								<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+								<strong>[SMTP] Error!</strong> Internal server error!
+							</div><!-- /Alert Failed -->
+
+
+							<!-- Alert Mandatory -->
+							<div id="alert_mandatory" class="alert alert-danger mb-30">
+								<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+								<strong>Sorry!</strong> You need to complete all mandatory (*) fields!
+							</div><!-- /Alert Mandatory -->
+
+
+							<form action="php/contact.php" method="post" enctype="multipart/form-data">
+								<fieldset>
+									<input type="hidden" name="action" value="contact_send" />
+
+									<div class="row">
+											<div class="col-md-4">
+												<label for="contact:name">Full Name *</label>
+												<input required type="text" value="" class="form-control" name="contact[name][required]" id="contact:name">
+											</div>
+											<div class="col-md-4">
+												<label for="contact:email">E-mail Address *</label>
+												<input required type="email" value="" class="form-control" name="contact[email][required]" id="contact:email">
+											</div>
+											<div class="col-md-4">
+												<label for="contact:phone">Phone</label>
+												<input type="text" value="" class="form-control" name="contact[phone]" id="contact:phone">
+											</div>
+									</div>
+									<div class="row">
+										<div class="col-md-4">
+											<label for="contact:name">Company name *</label>
+											<input required type="text" value="" class="form-control" name="contact[name][required]" id="contact:name">
+										</div>
+									
+										
+								    </div>
+									
+									<div class="row">
+											<div class="col-md-8">
+												<label for="contact:subject">Name of your projet *</label>
+												<input required type="text" value="" class="form-control" name="contact[subject][required]" id="contact:subject">
+											</div>
+											<div class="col-md-4">
+												<label for="contact_department">Department in charge</label>
+												<select class="form-control pointer" name="contact[department]">
+													<option value="">--- Select ---</option>
+													<option value="Marketing">Marketing</option>
+													<option value="Webdesign">Webdesign</option>
+													<option value="Architecture">Architecture</option>
+												</select>
+											</div>
+									</div>
+									<div class="row">
+											<div class="col-md-12">
+												<label for="contact:message">Project description *</label>
+												<textarea required maxlength="10000" rows="8" class="form-control" name="contact[message]" id="contact:message"></textarea>
+											</div>
+									</div>
+									<div class="row">
+										<div class="col-md-12">
+											<label for="contact:message">Message or additional detail *</label>
+											<textarea required maxlength="10000" rows="8" class="form-control" name="contact[message]" id="contact:message"></textarea>
+										</div>
+								</div>
+									
+
+								</fieldset>
+
+								<div class="row">
+									<div class="col-md-12">
+										<button type="submit" class="btn btn-primary" style= background:rgb(155,62,62)><i class="fa fa-check"></i> SEND MESSAGE</button>
+									</div>
+								</div>
+							</form>
+
+						</div>
+						<!-- /FORM -->
+
+
+						<!-- INFO -->
+						<div class="col-md-4 col-sm-4">
+
+							<h2>Visit Us</h2>
+
+							<!-- 
+							Available heights
+								h-100
+								h-150
+								h-200
+								h-250
+								h-300
+								h-350
+								h-400
+								h-450
+								h-500
+								h-550
+								h-600
+							-->
+							<div id="map2" class="h-400 grayscale"></div>
+
+							
+							<hr />
+
+							<p>
+								<span class="block"><strong><i class="fa fa-map-marker"></i> Address:</strong>725 Lebourneuf Blvd, door 418 ,Quebec City, Canada, G2J 0C4</span>
+								<span class="block"><strong><i class="fa fa-phone"></i> Phone:</strong> <a>(581)-701-0303</a></span>
+								<span class="block"><strong><i class="fa fa-envelope"></i> Email:</strong> <a>info@codeboxx.biz</a></span>
+							</p>
+
+						</div>
+						<!-- /INFO -->
+
+					</div>
+
+				</div>
+			</section>
+			<!-- /CONTACT -->
+
+
+
+
+			<!-- FOOTER -->
+			<footer id="footer">
+				<div class="container">
+
+
+					<div class="row">
+
+						<!-- col #1 -->
+						<div class="col-md-8">
+
+							<h3 class="letter-spacing-1">WHY US?</h3>
+
+							<!-- Small Description -->
+							<p>
+								We do everything we can to be the trusted partner of our customers. These deserve to be considered in everything we do and in every decision we make, thus enabling a loyal and prosperous business relationship.
+							</p>
+							<h2>(581)-701-0303</h2>
+						</div>
+						<!-- /col #1 -->
+
+						<!-- col #2 -->
+						<div class="col-md-4">
+							<h3 class="letter-spacing-1">KEEP IN TOUCH</h3>
+
+							<!-- Newsletter Form -->
+							<p>Subscribe to Our Newsletter to get Important News & Offers</p>
+
+							<form class="validate" action="php/newsletter.php" method="post" data-success="Subscribed! Thank you!" data-toastr-position="bottom-right">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="fa fa-envelope"></i></span>
+									<input type="email" id="email" name="email" class="form-control required" placeholder="Enter your Email">
+									<span class="input-group-btn">
+										<button class="btn btn-success" type="submit">Subscribe</button>
+									</span>
+								</div>
+							</form>
+							<!-- /Newsletter Form -->
+
+
+						</div>
+						<!-- /col #2 -->
+
+					</div>
+
+
+				</div>
+
+				<div class="copyright">
+					<div class="container">
+						<ul class="float-right m-0 list-inline mobile-block">
+							<li><a href="#">Terms &amp; Conditions</a></li>
+							<li>&bull;</li>
+							<li><a href="#">Privacy</a></li>
+						</ul>
+						&copy; All Rights Reserved, Company LTD
+					</div>
+				</div>
+
+			</footer>
+			<!-- /FOOTER -->
+
+		</div>
+		<!-- /wrapper -->
+
+
+		<!-- SCROLL TO TOP -->
+		<a href="#" id="toTop"></a>
+
+
+		<!-- PRELOADER -->
+		<div id="preloader">
+			<div class="inner">
+				<span class="loader"></span>
+			</div>
+		</div><!-- /PRELOADER -->
+
+
+		<!-- JAVASCRIPT FILES -->
+		<script>var plugin_path = 'assets/plugins/';</script>
+		<script src="assets/plugins/jquery/jquery-3.3.1.min.js"></script>
+
+		<script src="assets/js/scripts.js"></script>
+		
+		<!-- STYLESWITCHER - REMOVE -->
+		
+
+		<!-- REVOLUTION SLIDER -->
+		<script src="assets/plugins/slider.revolution/js/jquery.themepunch.tools.min.js"></script>
+		<script src="assets/plugins/slider.revolution/js/jquery.themepunch.revolution.min.js"></script>
+		<script src="assets/js/view/demo.revolution_slider.js"></script>
+
+		<!-- PAGELEVEL SCRIPTS -->
+		<script src="assets/js/contact.js"></script>
+
+		<!-- 
+			GMAP.JS 
+			http://hpneo.github.io/gmaps/
+
+		
+		--> 
+		<script src="//maps.google.com/maps/api/js?key=AIzaSyCqCn84CgZN6o1Xc3P4dM657HIxkX3jzPY"></script>
+		<script src="assets/plugins/gmaps.js"></script>
+		
+		<script>
+
+			jQuery(document).ready(function(){
+
+				/**
+					@BASIC GOOGLE MAP
+				**/
+				var map2 = new GMaps({
+					div: '#map2',
+					lat: -12.043333,
+					lng: -77.028333,
+					scrollwheel: false
+				});
+
+				var marker = map2.addMarker({
+					lat: -12.043333,
+					lng: -77.028333,
+					title: 'Company, Inc.'
+				});  
+
+		
+			});
+		
+		
+		
+		
+		
+		</script>
+	
+
+
+			});
+
+	
+
+</body>
+</html>
