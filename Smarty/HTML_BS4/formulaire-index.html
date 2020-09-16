@@ -48,6 +48,19 @@
 	-->
 	<body class="smoothscroll enable-animation">
 
+		<!-- start script-->
+
+		<script src= "js/jsFunctions_Rocket.js">
+
+
+		</script>
+
+		<!-- start script-->
+
+		
+
+
+
 		<!-- SLIDE TOP -->
 		<div id="slidetop">
 
@@ -245,19 +258,36 @@
 						<p class="fs-13"></p>
 					</div>
 
+					<table border="10" width=100%>
+						<tr>                
+							<td colspan="2">
+						  <div class="col-md-4">
+							  <label for="contact_department">Choose a building type to begin a quote:</label>
+							  <select class="form-control pointer" id="dropDownSelection" onchange="displayDivSelecteur()">
+								  <option value="0">--- Select ---</option>
+								  <option value="1">RESIDENTIAL</option>
+								  <option value="2">COMMERCIAL</option>
+								  <option value="3">CORPORATE</option>
+								  <option value="4">HYBRID</option>
+							  </select>
+					  </div>
+							 <br>
+							 <br> 
+							 <label id="idMessage01" class="color: red;"></label>
+						  </td>       
+					   </tr>
+			  
+						</tr>
+			  
+					  </table> 
+
 					
 			
-					<label for="Buildings">Choose a building type to begin a quote:</label>
+					<label for="Buildings"></label>
 
 					
 
-					  <select name="Buildings" onchange="report(this.value)"> 
-						<option value="">Please select</option>
-						<option value="residential">Residential</option>
-						<option value="commercial">commercial</option>
-						<option value="corporate">corporate</option>
-						<option value="commercial">hybrid</option>
-					  </select>
+					  
 
 
 					  
@@ -306,12 +336,12 @@
 						<div class="col-md-4 col-sm-6 col-12">
 							<div class="card">
 
-								<a href="portfolio-single-project.html">
+								<a href="http://127.0.0.1:5500/index-form-corporate.html">
 									<img class="card-img-top" src="https://www.iberdrola.com/wcorp/gc/prod/en_US/comunicacion/elevator_pitch_mult_1_res/elevator_746x419.jpg" alt="">
 								</a>
 
 								<div class="card-block">
-									<a href="portfolio-single-project.html" class="text-black fs-20 mb-20 block">CORPORATE</a>
+									<a href="http://127.0.0.1:5500/index-form-corporate.html" class="text-black fs-20 mb-20 block">CORPORATE</a>
 									
 								</div>
 
